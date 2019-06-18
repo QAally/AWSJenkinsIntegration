@@ -27,13 +27,13 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        bat "C:/Users/Ally G/Desktop/JAVA Automation/winscp.bat"
+                       echo 'Now deploying to staging...'
                     }
                 }
  
                 stage ("Deploy to Production"){
                     steps {
-                        bat "C:/Users/Ally G/Desktop/JAVA Automation/winscp.bat"
+                        winscp "C/Users/Ally G/Desktop/JAVA Automation/AWS/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_prod}:/var/lib/tomcat7/webapps
                     }
                 }
             }
