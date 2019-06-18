@@ -29,7 +29,7 @@ stages{
                     steps {
                        echo 'Now deploying to staging...'
                     }
-                }
+                } 
  
                 stage ("Deploy to Production"){
                     steps {
