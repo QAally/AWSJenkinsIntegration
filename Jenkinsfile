@@ -27,7 +27,7 @@ stages{
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        bat "C:\Users\Ally G\Desktop\JAVA Automation\winscp.bat""
+                        bat "C:/Users/Ally G/Desktop/JAVA Automation/winscp.bat""
                     }
                 }
  
